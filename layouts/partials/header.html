@@ -8,7 +8,7 @@
     <a href="mailto:{{ . }}">{{ . }}</a>
     {{ end }}
     {{ with .phone }}
-    <a href="tel:{{ . }}">({{substr . 0 3}}) {{substr . 3 3}}-{{substr . 6 4}}</a>
+    <a href="tel:{{ . }}">({{substr . 0 3}}) {{substr . 3 3}}-{{substr . 6 3}}-{{substr . 9 4}}</a>
     {{ end }}
     {{ with .website}}
     <a href="https://{{ . }}">{{ . }}</a>

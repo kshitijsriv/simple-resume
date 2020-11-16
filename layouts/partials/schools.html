@@ -11,6 +11,35 @@
       <em>{{ . }}</em>
     </p>
     {{ end }}
+
+    {{ range .thesis }}
+    <p>
+      <em>{{ . }}</em>
+    </p>
+    {{ end }}
+    
+    {{ range .awards }}
+    <p>
+      <em>{{ . }}</em>
+    </p>
+    {{ end }}
+    <ul>
+      {{ range .award_points }}
+      <li>{{ . | markdownify }}</li>
+      {{ end }}
+    </ul>
+
+
+    {{ range .activities }}
+    <p>
+      <em>{{ . }}</em>
+    </p>
+    {{ end }}
+    <ul>
+      {{ range .activity_points }}
+      <li>{{ . | markdownify }}</li>
+      {{ end }}
+    </ul>
   </div>
   {{ end }}
 </section>

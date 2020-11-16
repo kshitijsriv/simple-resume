@@ -18,6 +18,12 @@
       {{ with .experiences }}
       {{ partial "experiences.html" . }}
       {{ end }}
+      {{ with .projects }}
+      {{ partial "projects.html" . }}
+      {{ end }}
+      {{ with .skills }}
+      {{ partial "skills.html" . }}
+      {{ end }}
       {{ range .info }}
       <section>
         <h2>{{ .name }}</h2>

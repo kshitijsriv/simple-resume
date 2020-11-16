@@ -1,0 +1,11 @@
+<section>
+  <h2>Skills</h2>
+  {{ range . }}
+  <div>
+    <!-- <div class="heading-line"> -->
+      <!-- <h3>{{ .title }} : <em> {{ .keywords }} </em> </h3> -->
+    <!-- </div> -->
+    <b>{{ .skill }}</b> : {{ .particulars }}
+  </div>
+  {{ end }}
+</section>

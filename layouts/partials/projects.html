@@ -1,0 +1,15 @@
+<section>
+  <h2>Projects</h2>
+  {{ range . }}
+  <div>
+    <div class="heading-line">
+      <h3>{{ .title }} : <em> {{ .keywords }} </em> </h3>
+    </div>
+    <ul>
+      {{ range .points }}
+      <li>{{ . | markdownify }}</li>
+      {{ end }}
+    </ul>
+  </div>
+  {{ end }}
+</section>
